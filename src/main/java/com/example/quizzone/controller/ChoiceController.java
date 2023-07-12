@@ -31,7 +31,7 @@ public class ChoiceController {
             return ResponseEntity.notFound().build();
         }
     }
-
+    System.out.println();
     @PostMapping("/")
     public ResponseEntity<Choice> createChoice(@RequestBody Choice choice) {
         Choice createdChoice = choiceService.createChoice(choice);
@@ -39,4 +39,5 @@ public class ChoiceController {
     }
 
     // Other controller methods for choice-related operations
+    
 }
